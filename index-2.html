@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title> Agnes Cicilia - Personal Portfolio</title>
+
+    <!-- CSS here -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/css/font/bootstrap-icons.css" rel="stylesheet" >
+    <link href="assets/css/jquery.animatedheadline.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" >
+    <link href="assets/css/scrollCue.css" rel="stylesheet" >
+    <link href="assets/css/style.css" rel="stylesheet" >
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="mariam__wraper">
+      <!-- loading -->
+      <div class="loading text-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+         <!--menu toggle-->
+          <button class="button-toggle" id="buttonToggle">
+            <span></span>
+        </button>
+
+        <!--header-->
+        <header class="header header--left">
+            <div class="header__container">
+                <div class="header__logo">
+                  <!-- <a href="index-2.html"><img src="assets/images/logo.png" alt=""></a> -->
+                </div>
+
+                <nav class="header__nav">
+                    <div class="header__nav__cross">
+                      <i class="bi bi-x-lg"></i>
+                    </div>  
+                    <ul class="nav">
+                        <li class="nav__item"><a class="nav__link active" aria-current="page" href="#home">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+                    </ul>      
+                </nav>
+
+                <div class="header__switch-mode">
+                    <div  class="switch-mode">
+                      <button class="switch-mode__icon switch-mode--light" onclick="setTheme('light')" title="Light mode">
+                        <i class="bi bi-sun"></i>
+                      </button>
+
+                      <button class="switch-mode__icon switch-mode--dark" onclick="setTheme('dark')" title="dark mode">
+                        <i class="bi bi-moon-fill"></i>
+                      </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+ 
+        <!--Main-->
+        <main class="main">
+
+          <!-- Home section -->
+          <section class="home vh-100" style="background-image: url('assets/images/bg/bg-1.jpg')">
+              <div class="container" data-cues="fadeIn">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="home__content vh-100 " >
+                      <div class="home__social-media">
+                        <ul class="social-media ">
+                          <li class="social-media__item">
+                            <a href="#" class="social-media__link"><i class="bi bi-facebook"></i></a>
+                          </li>
+                          <li class="social-media__item">
+                            <a href="#" class="social-media__link"><i class="bi bi-twitter-x"></i></a>
+                          </li>  
+                          <li class="social-media__item">
+                            <a href="#" class="social-media__link"><i class="bi bi-instagram"></i></a>
+                          </li>  
+                          <li class="social-media__item">
+                            <a href="#" class="social-media__link"><i class="bi bi-dribbble"></i></a>
+                          </li>  
+                          <li class="social-media__item">
+                            <a href="#" class="social-media__link"><i class="bi bi-github"></i></a>
+                          </li>    
+                        </ul>
+  
+                      </div>
+
+                       <!-- banner -->
+                      <div class="home__banner">
+                        <div class="banner">
+                          <h6 class="banner__subtitle">Hi There,</h6>
+                          <h1 class="banner__title cd-headline clip">I Am a
+                              <span class="cd-words-wrapper">
+                                  <b class="is-visible"> Developer</b>
+                                  <b>Designer</b>
+                                  <!-- <b></b> -->
+                              </span>
+                          </h1>
+                          <p class="banner__desc">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing pretium lacus.
+                          </p>
+                          <a href="#about" class="btn-default"> 
+                              <i class="bi bi-person-circle"></i>
+                              <span> More About Me</span>
+                          </a>
+                        </div>
+                      
+                      </div>
+
+                      <!-- info -->
+                      <div class="home__info">
+                        <div class="info">
+                          <div class="info__item">
+                            <p class="mb-0">Email:</p>
+                            <p class="mb-0">agnesmarbun2311@gmail.com</p>
+                        </div>
+                    
+                        <div class="info__item">
+                            <p class="mb-0">Phone:</p>
+                            <p class="mb-0">082272931303</p>
+                        </div>
+                    
+                        <div class="info__item">
+                            <p class="mb-0">Location:</p>
+                            <p class="mb-0">Medan, North Sumatera</p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <!-- About section -->
+          <section class="about section section--white" id="about" >
+            <div class="container">
+              <!-- heading -->
+              <div class="row" data-cues="fadeIn">
+                <div class="col-12">
+                   <div class="heading" >
+                    <div class="heading__shape"></div>
+                    <div class="heading__content">
+                      <h2>About me</h2>
+                      <p>Main informations about me and what I love to do.</p>
+                    </div>
+                   </div>
+                </div>
+
+              </div>
+
+              <!-- profile+ details -->
+              <div class="row " data-cues="fadeIn">
+                <div class="col-xl-5 mb-24 ">
+                   <div class="profile card card--img ">
+                      <img src="assets/images/about/agnes.jpeg" alt="" class="profile__img">
+                   </div>
+                </div>
+                <div class="col-xl-7 ">
+                  <div class="details card card--light">
+                    <h3 class="details__title">Hello,<br>I'm Agnes Cicilia Marbun, </h3>
+                    <p class="details__desc">
+                      I am an Informatics student at Del Institute of Technology. 
+                      I have big dreams in my life as a website developer. 
+                      I love contributing to campus activities and contributing to role goals through my current education. In this Portfolio, I would like to share my projects and achievements during my educational journey. 
+                    </p>
+
+                    <ul class="details__list ">   
+                        <li><span>Phone :</span> 082272931303</li>
+                        <li><span>Email :</span><a href="mailto:agnesmarbun2311@gmail.com">agnesmarbun2311@gmail.com</a></li>
+                        <li><span>Nationality :</span> Indonesia</li>
+                        <li><span>Address :</span> Balige, Sumatera Utara</li>
+                        <li><span>LikedIn :</span> Agnes Cicilia Marbun</li>
+                        <!-- <li><span>Freelancer :</span> Available</li> -->
+                    </ul>
+
+                    <div class="details__btn">
+                      <a href="assets/images/CV_Agnes Cicilia Marbun.pdf" class="btn-default" download>
+                        <i class="bi bi-cloud-arrow-down-fill"></i>
+                        <span>Download My CV</span>
+                      </a>
+                     
+                    </div>
+                   
+                </div>
+                </div>
+              </div>
+             
+              
+
+              <div class="col-lg-6">
+                <div class="timeline card card--light ">
+                  <div class="timeline__single">
+                    <h4 class="timeline__single__title"> Education </h4>
+                    <div class="timeline__item ">
+                      <img src="assets/images/about/edu.png" alt="" class="timeline__item__img">
+
+                      <div class="timeline__item__content">
+                        <h6>Informatics Enginering Student</h6>
+                        <p>
+                          <span>Del Institut of Technology</span>
+                          <span class="dot"></span>
+                          <!-- <span>Full time</span> -->
+                        </p>
+                        <div >
+                          <span>August 2021 - Present</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="timeline__item ">
+                      <img src="assets/images/about/edu.png" alt="" class="timeline__item__img">
+
+                      <div class="timeline__item__content">
+                        <h6>Senior High School</h6>
+                        <p>
+                          <span>Laguboti 1st public senior high school</span>
+                        </p>
+                        <div >
+                          <span>Jun 2018 - 2021</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- experience -->
+              <div class="row" data-cues="fadeIn">
+                <!-- Experience -->
+                <div class="col-lg-6">
+                  <div class="timeline card card--light ">
+                      <div class="timeline__single">
+                        <h4 class="timeline__single__title"> Experience</h4>
+                          
+                        <div class="timeline__item ">
+                          <img src="assets/images/about/exp.png" alt="" class="timeline__item__img">
+  
+                          <div class="timeline__item__content">
+                            <h6>Treasure</h6>
+                            <p>
+                              <span>Art and Culture Department</span>
+                              <span class="dot"></span>
+                              <span>BEM - Del Institute of Technology</span>
+                            </p>
+                           
+                            <div >
+                              <span>May 2023 - Present</span>
+                              <span class="dot"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="timeline__item ">
+                          <img src="assets/images/about/exp.png" alt="" class="timeline__item__img">
+  
+                          <div class="timeline__item__content">
+                            <h6>Chairman of Student Activity Units</h6>
+                            <p>
+                              <span>Del Dance Drama Club (3DC)</span>
+                              <span class="dot"></span>
+                              <span>3DC UKM - Del Institute of Technology</span>
+                            </p>
+                           
+                            <div >
+                              <span>October 2023 - Present</span>
+                              <span class="dot"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="timeline__item ">
+                          <img src="assets/images/about/exp.png" alt="" class="timeline__item__img">
+  
+                          <div class="timeline__item__content">
+                            <h6>Assistant Research</h6>
+                            <p>
+                              <span>Fundamental Research for Leading Higher Education</span>
+                              <span class="dot"></span>
+                              <span>Del Institute of Technology</span>
+                            </p>
+                           
+                            <div >
+                              <span>June 2023</span>
+                              <span class="dot"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="timeline__item ">
+                          <img src="assets/images/about/exp.png" alt="" class="timeline__item__img">
+  
+                          <div class="timeline__item__content">
+                            <h6>Member</h6>
+                            <p>
+                              <span>Comunity Service - MSIB</span>
+                              <span class="dot"></span>
+                              <span>Del Institute of Technology</span>
+                            </p>
+                           
+                            <div >
+                              <span>December 2021</span>
+                              <span class="dot"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                  </div> 
+                 </div>
+                  
+              
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Portfolio section -->
+          <section class="portfolio section section--white" id="portfolio">
+            <div class="container" >
+              <!-- heading -->
+              <div class="row" data-cues="fadeIn">
+                <div class="col-12">
+                    <div class="heading">
+                    <div class="heading__shape"></div>
+                    <div class="heading__content">
+                      <h2 >My Portfolio</h2>
+                      <!-- <p>A Latest Creative Works in Design and Web .</p> -->
+                    </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row  portfolio__items" data-cues="fadeIn">
+                <!-- portfolio-item 1 -->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="portfolio-item card card--light">
+                    <div class="portfolio-item__image" >
+                      <img class="portfolio-item__image__img" src="assets/images/portfolio/frk-fed.jpeg" alt="portfolio"/>
+
+                      <div class="portfolio-item__image__btn">
+                        <a href="assets/images/portfolio/frk-fed.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                      </div>
+
+                    </div>
+
+                    <div class="portfolio-item__content">
+                      <div class="portfolio-item__content__info">
+                        <h5 class="portfolio-item__content__title">FRK & FED Website</h5>
+                        <p class="portfolio-item__content__subtitle">Website - Laravel</p>
+                      </div>
+                      <a class="btn-link" href="portfolio-single.html" target="_blank">
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                      </a>
+                    </div>
+                   
+                  </div>
+                </div>
+
+                <!-- portfolio-item 2 -->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="portfolio-item card card--light">
+                    <div class="portfolio-item__image">
+                      <img class="portfolio-item__image__img" src="assets/images/portfolio/spmb.jpeg" alt="portfolio"/>
+                      <div class="portfolio-item__image__btn">
+                        <a href="assets/images/portfolio/spmb.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-item__content">
+                      <div class="portfolio-item__content__info">
+                        <h5 class="portfolio-item__content__title">SMPB Website</h5>
+                        <p class="portfolio-item__content__subtitle">Website - Laravel</p>
+                      </div>
+                      <a class="btn-link" href="portfolio-single.html" target="_blank">
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                      </a>
+                    </div>
+                   
+                  </div>
+                </div>
+
+                 <!-- portfolio-item 3 -->
+                 <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="portfolio-item card card--light">
+                    <div class="portfolio-item__image">
+                      <img class="portfolio-item__image__img" src="assets/images/portfolio/Del-Care.jpeg" alt="portfolio"/>
+                      <div class="portfolio-item__image__btn">
+                        <a href="assets/images/portfolio/Del-Care.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-item__content">
+                      <div class="portfolio-item__content__info">
+                        <h5 class="portfolio-item__content__title">Del Care Application</h5>
+                        <p class="portfolio-item__content__subtitle">app design</p>
+                      </div>
+                      <a class="btn-link" href="portfolio-single.html" target="_blank">
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                      </a>
+                    </div>
+                   
+                  </div>
+                </div>
+
+                <!-- portfolio-item 4 -->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="portfolio-item card card--light">
+                    <div class="portfolio-item__image">
+                      <img class="portfolio-item__image__img" src="assets/images/portfolio/lostandfound.jpeg" alt="portfolio"/>
+                      <div class="portfolio-item__image__btn">
+                        <a href="assets/images/portfolio/lostandfound.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-item__content">
+                      <div class="portfolio-item__content__info">
+                        <h5 class="portfolio-item__content__title">Lost and Found Application</h5>
+                        <p class="portfolio-item__content__subtitle">Application - Kotlin</p>
+                      </div>
+                      <a class="btn-link" href="portfolio-single.html" target="_blank">
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                      </a>
+                    </div>
+                   
+                  </div>
+                </div>
+
+                 <!-- portfolio-item 5 -->
+                 <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="portfolio-item card card--light">
+                    <div class="portfolio-item__image">
+                      <img class="portfolio-item__image__img" src="assets/images/portfolio/del.jpeg" alt="portfolio"/>
+                      <div class="portfolio-item__image__btn">
+                        <a href="assets/images/portfolio/del.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-item__content">
+                      <div class="portfolio-item__content__info">
+                        <h5 class="portfolio-item__content__title">Del Website Redesign</h5>
+                        <p class="portfolio-item__content__subtitle">web design</p>
+                      </div>
+                      <a class="btn-link" href="portfolio-single.html" target="_blank">
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                      </a>
+                    </div>
+                   
+                  </div>
+                </div>
+
+                <!-- portfolio-item 6 -->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="portfolio-item card card--light">
+                    <div class="portfolio-item__image">
+                      <img class="portfolio-item__image__img" src="assets/images/portfolio/olys.jpeg" alt="portfolio"/>
+                      <div class="portfolio-item__image__btn">
+                        <a href="assets/images/portfolio/olys.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="portfolio-item__content">
+                      <div class="portfolio-item__content__info">
+                        <h5 class="portfolio-item__content__title">Online Library Redesign</h5>
+                        <p class="portfolio-item__content__subtitle">website design</p>
+                      </div>
+                      <a class="btn-link" href="portfolio-single.html" target="_blank">
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                      </a>
+                    </div>
+                   
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="section__readmore">
+                    For More Works Visit 
+                    <a href="portfolio-page.html" target="_blank" class="section__readmore__link">Our Portfolio</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Contact section -->
+          <section class="contact section section--light"  id="contact">
+            <div class="container">
+              <!-- heading -->
+              <div class="row" data-cues="fadeIn">
+                <div class="col-12">
+                    <div class="heading">
+                    <div class="heading__shape"></div>
+                    <div class="heading__content">
+                      <h2>Contact Me</h2>
+                      <p>Feel Free To Contact Me Any Time</p>
+                    </div>
+                    </div>
+                </div>
+
+              </div>
+               <!-- conatct-form + info -->
+              <div class="row" data-cues="fadeIn">
+                <div class="col-xl-7">
+                  <form action="https://assiagroupe.tech/mariam/assets/php/mail.php" class="contact-form needs-validation card card--white" novalidate>
+                    <div class="row">
+                      <div class="col-md-6 mb-24">
+                        <input type="text" class="form-control contact-form__input" id="name" placeholder="Enter Your Name" required>
+                        <!-- <div class="valid-feedback"> Looks good!</div> -->
+                        <div class="invalid-feedback">Please Enter Your Name.</div>
+                      </div>
+
+                      <div class="col-md-6 mb-24">
+                        <input type="email" class="form-control contact-form__input" id="email" placeholder="Enter Your Email" required>
+                        <!-- <div class="valid-feedback">Looks good!</div> -->
+                        <div class="invalid-feedback">Please Enter Your Email.</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 mb-24">
+                          <input type="text" class="form-control contact-form__input" id="subject" placeholder="Enter Your Subject" required>
+                          <div class="invalid-feedback ">Please Enter Your Subject.</div>
+                      </div>
+                            
+                      <div class="col-lg-12 mb-24">
+                        <textarea class="form-control contact-form__input" id="msg" rows="5" placeholder="Enter Your Message" required></textarea>
+                          <div class="invalid-feedback ">Please Enter Your Message.</div>
+                      </div>
+                          
+                      <div class="col-12">
+                        <button type="submit" class="btn-default"> 
+                          <i class="bi bi-send-fill"></i>
+                            <span> Send Message</span>
+                        </button>
+                      </div>
+   
+                    </div>
+                  </form>
+                </div>
+                <div class="col-xl-5">
+                  <div class="contact__info card card--white">
+                    <h4>Let's talk about everything!</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                    <div class="contact__info__items">
+                      <div class="contact-item">
+                        <p class="contact-item__name">Phone:</p>
+                        <p class="contact-item__text">
+                          <i class="bi bi-telephone-fill contact-item__text__icon"></i> 
+                          <span>+113-804-9098</span>
+                        </p>
+                      </div>
+
+                      <div class="contact-item">
+                        <p class="contact-item__name">Email:</p>
+                        <p class="contact-item__text">
+                          <i class="bi bi-envelope-fill contact-item__text__icon"></i>
+                          <span>agnesmarbun2311@gmail.com</span>
+                        </p>
+                      </div>
+
+                      <div class="contact-item">
+                        <p class="contact-item__name">Adress:</p>
+                        <p class="contact-item__text">
+                          <i class="bi bi-geo-alt-fill contact-item__text__icon"></i>
+                          <span>Balige, North Sumatera</span>
+                        </p>
+                      </div>
+
+                      <div class="contact-item">
+                        <p class="contact-item__name">Follow:</p>
+                        <div class="contact-item__social-media">
+                          <ul class="social-media ">
+                            <li class="social-media__item">
+                              <a href="#" class="social-media__link"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="social-media__item">
+                              <a href="#" class="social-media__link"><i class="bi bi-twitter-x"></i></a>
+                            </li>  
+                            <li class="social-media__item">
+                              <a href="#" class="social-media__link"><i class="bi bi-instagram"></i></a>
+                            </li>  
+                            <li class="social-media__item">
+                              <a href="#" class="social-media__link"><i class="bi bi-dribbble"></i></a>
+                            </li>  
+                            <li class="social-media__item">
+                              <a href="#" class="social-media__link">
+                                <i class="bi bi-github"></i></a>
+                            </li>    
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="footer__copyright">© 2024 Agnes Cicilia , Are Right All Resereved.</p>
+                    </div>
+                </div>
+            </div>
+          </footer>
+        </main>
+    </div>
+  
+    <!-- JS here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
+    <script src="assets/js/jquery.animatedheadline.min.js" ></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/scrollCue.min.js"></script>
+    <script src="assets/js/index.js" ></script>
+
+
+
+  </body>
+
+</html>

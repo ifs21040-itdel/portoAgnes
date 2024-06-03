@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Agnes Cicilia - Personal Portfolio</title>
+
+    <!-- CSS here -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/css/font/bootstrap-icons.css" rel="stylesheet" >
+    <link href="assets/css/jquery.animatedheadline.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" >
+    <link href="assets/css/scrollCue.css" rel="stylesheet" >
+    <link href="assets/css/style.css" rel="stylesheet" >
+
+     <!-- Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="mariam__wraper">
+        <!-- loading -->
+        <div class="loading text-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+
+         <!--menu toggle-->
+          <button class="button-toggle" id="buttonToggle">
+            <span></span>
+        </button>
+
+          <!--header-->
+          <header class="header header--left">
+            <div class="header__container">
+                <div class="header__logo">
+                  <!-- <a href="index-2.html"><img src="assets/images/logo.png" alt=""></a> -->
+                </div>
+
+                <nav class="header__nav">
+                    <div class="header__nav__cross">
+                      <i class="bi bi-x-lg"></i>
+                    </div>  
+                    <ul class="nav">
+                        <li class="nav__item"><a class="nav__link active" aria-current="page" href="index-2.html#home">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index-2.html#about">about</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index-2.html#portfolio">portfolio</a></li>
+                        <li class="nav__item"><a class="nav__link" href="index-2.html#contact">contact</a></li>
+                    </ul>      
+                </nav>
+
+                <div class="header__switch-mode">
+                    <div  class="switch-mode">
+                      <button class="switch-mode__icon switch-mode--light" onclick="setTheme('light')" title="Light mode">
+                        <i class="bi bi-sun"></i>
+                      </button>
+
+                      <button class="switch-mode__icon switch-mode--dark" onclick="setTheme('dark')" title="dark mode">
+                        <i class="bi bi-moon-fill"></i>
+                      </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+ 
+        <!--Main-->
+        <main class="main">
+
+          
+          <!-- Portfolio page -->
+          <section class="portfolio section section--light"  id="portfolio">
+            <div class="container">
+              
+             <!-- heading -->
+             <div class="row" data-cues="fadeIn">
+              <div class="col-12">
+                  <div class="heading">
+                  <div class="heading__shape"></div>
+                  <div class="heading__content">
+                    <h2 >My Portfolio</h2>
+                    <p>A Latest Creative Works in Design and Web .</p>
+                  </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row  portfolio__items" data-cues="fadeIn">
+              <!-- portfolio-item 1 -->
+              <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="portfolio-item card card--light">
+                  <div class="portfolio-item__image" >
+                    <img class="portfolio-item__image__img" src="assets/images/portfolio/frk-fed.jpeg" alt="portfolio"/>
+  
+                    <div class="portfolio-item__image__btn">
+                      <a href="assets/images/portfolio/frk-fed.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                    </div>
+  
+                  </div>
+  
+                  <div class="portfolio-item__content">
+                    <div class="portfolio-item__content__info">
+                      <h5 class="portfolio-item__content__title">FRK & FED Website</h5>
+                      <p class="portfolio-item__content__subtitle">Website - Laravel</p>
+                    </div>
+                    <a class="btn-link" href="portfolio-single.html" target="_blank">
+                      <i class="bi bi-arrow-up-right-circle"></i>
+                    </a>
+                  </div>
+                 
+                </div>
+              </div>
+  
+              <!-- portfolio-item 2 -->
+              <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="portfolio-item card card--light">
+                  <div class="portfolio-item__image">
+                    <img class="portfolio-item__image__img" src="assets/images/portfolio/spmb.jpeg" alt="portfolio"/>
+                    <div class="portfolio-item__image__btn">
+                      <a href="assets/images/portfolio/spmb.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                    </div>
+                  </div>
+  
+                  <div class="portfolio-item__content">
+                    <div class="portfolio-item__content__info">
+                      <h5 class="portfolio-item__content__title">SMPB Website</h5>
+                      <p class="portfolio-item__content__subtitle">Website - Laravel</p>
+                    </div>
+                    <a class="btn-link" href="portfolio-single.html" target="_blank">
+                      <i class="bi bi-arrow-up-right-circle"></i>
+                    </a>
+                  </div>
+                 
+                </div>
+              </div>
+  
+               <!-- portfolio-item 3 -->
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="portfolio-item card card--light">
+                  <div class="portfolio-item__image">
+                    <img class="portfolio-item__image__img" src="assets/images/portfolio/Del-Care.jpeg" alt="portfolio"/>
+                    <div class="portfolio-item__image__btn">
+                      <a href="assets/images/portfolio/Del-Care.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                    </div>
+                  </div>
+  
+                  <div class="portfolio-item__content">
+                    <div class="portfolio-item__content__info">
+                      <h5 class="portfolio-item__content__title">Del Care Application</h5>
+                      <p class="portfolio-item__content__subtitle">app design</p>
+                    </div>
+                    <a class="btn-link" href="portfolio-single.html" target="_blank">
+                      <i class="bi bi-arrow-up-right-circle"></i>
+                    </a>
+                  </div>
+                 
+                </div>
+              </div>
+  
+              <!-- portfolio-item 4 -->
+              <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="portfolio-item card card--light">
+                  <div class="portfolio-item__image">
+                    <img class="portfolio-item__image__img" src="assets/images/portfolio/lostandfound.jpeg" alt="portfolio"/>
+                    <div class="portfolio-item__image__btn">
+                      <a href="assets/images/portfolio/lostandfound.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                    </div>
+                  </div>
+  
+                  <div class="portfolio-item__content">
+                    <div class="portfolio-item__content__info">
+                      <h5 class="portfolio-item__content__title">Lost and Found Application</h5>
+                      <p class="portfolio-item__content__subtitle">Application - Kotlin</p>
+                    </div>
+                    <a class="btn-link" href="portfolio-single.html" target="_blank">
+                      <i class="bi bi-arrow-up-right-circle"></i>
+                    </a>
+                  </div>
+                 
+                </div>
+              </div>
+  
+               <!-- portfolio-item 5 -->
+               <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="portfolio-item card card--light">
+                  <div class="portfolio-item__image">
+                    <img class="portfolio-item__image__img" src="assets/images/portfolio/del.jpeg" alt="portfolio"/>
+                    <div class="portfolio-item__image__btn">
+                      <a href="assets/images/portfolio/del.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                    </div>
+                  </div>
+  
+                  <div class="portfolio-item__content">
+                    <div class="portfolio-item__content__info">
+                      <h5 class="portfolio-item__content__title">Del Website Redesign</h5>
+                      <p class="portfolio-item__content__subtitle">web design</p>
+                    </div>
+                    <a class="btn-link" href="portfolio-single.html" target="_blank">
+                      <i class="bi bi-arrow-up-right-circle"></i>
+                    </a>
+                  </div>
+                 
+                </div>
+              </div>
+  
+              <!-- portfolio-item 6 -->
+              <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="portfolio-item card card--light">
+                  <div class="portfolio-item__image">
+                    <img class="portfolio-item__image__img" src="assets/images/portfolio/olys.jpeg" alt="portfolio"/>
+                    <div class="portfolio-item__image__btn">
+                      <a href="assets/images/portfolio/olys.jpeg" class="btn-view"> <i class="bi bi-plus"></i></a>
+                    </div>
+                  </div>
+  
+                  <div class="portfolio-item__content">
+                    <div class="portfolio-item__content__info">
+                      <h5 class="portfolio-item__content__title">Online Library Redesign</h5>
+                      <p class="portfolio-item__content__subtitle">website design</p>
+                    </div>
+                    <a class="btn-link" href="portfolio-single.html" target="_blank">
+                      <i class="bi bi-arrow-up-right-circle"></i>
+                    </a>
+                  </div>
+                 
+                </div>
+              </div>
+              
+            </div>
+  
+            <div class="row">
+              <div class="col-12">
+                <div class="section__readmore">
+                  For More Works Visit 
+                  <a href="portfolio-page.html" target="_blank" class="section__readmore__link">Our Portfolio</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </section>
+
+              <!-- pagination -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul class="pagination mt-24">
+                    <li ><a href="#" class="pagination__number pagination--active">1</a></li>
+                    <li ><a href="#" class="pagination__number">2</a></li>
+                    <li ><a href="#" class="pagination__number">3</a></li>
+                    <li ><a href="#" class="pagination__number">4</a></li>
+                    <li ><a href="#" class="pagination__number">5</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="footer__copyright">© 2024 Agnes Cicilia , Are Right All Resereved.</p>
+                    </div>
+                </div>
+            </div>
+          </footer>
+        </main>
+    </div>
+  
+    <!-- JS here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
+    <script src="assets/js/jquery.animatedheadline.min.js" ></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/scrollCue.min.js"></script>
+    <script src="assets/js/index.js" ></script>
+
+
+
+  </body>
+
+</html>
